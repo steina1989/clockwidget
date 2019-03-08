@@ -27,13 +27,20 @@ You should now be obtrusively greeted by the clock widget.
 The hotket is relatively simple to modify to your liking, check out the self.key_combinations list in ClockListener (main.py) and the pynput documentation.
 
 ## Installing (WIP)
-### Ubuntu
-Try using nohup on one of the login scripts (.profile or .bash_profile)
+### OS with systemd (Debian, Arch, etc.)
+Open clockwidget.service to fill in missing details, and save changes.
 
+Shown here is the path to systemd service directories on Ubuntu 18.10. They may reside elsewhere on other distros.
 ```
-nohup /path/to/main.py &
+sudo cp clockwidget.service /lib/systemd/system/clockwidget.service
+sudo systemctl daemon-reload
+sudo systemctl enable clockwidget.service
+sudo systemctl start clockwidget.service
 ```
-[systemd](https://tecadmin.net/setup-autorun-python-script-using-systemd/) is also a viable option, configure it so that it will restart on failure.
+If something is wrong, try debugging with
+```
+sudo journalctl -f -u clockwidget.service
+```
 
 
 ## Known caveats
