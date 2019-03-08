@@ -18,7 +18,7 @@ python3 main.py
 Now press Ctrl+Shift+a, which is the default hotkey.
 You should now be obtrusively greeted by the clock widget.
 
-![https://github.com/steina1989/clockwidget/blob/master/demo.png]
+![](https://github.com/steina1989/clockwidget/blob/master/demo.png)
 
 
 ## Modifying the hotkey
