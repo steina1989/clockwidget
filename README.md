@@ -40,4 +40,4 @@ nohup /path/to/main.py &
 ### Gnome
 You may want to enable the [noAnnoyance plugin](https://extensions.gnome.org/extension/1236/noannoyance/) if the Clock widget opens in the background and you are greeted with Gnome's "Application Ready" message (it's a mad annoying feature anyway)
 
-### This has been a March installment of 2019's A-Program-A-Month
+## This has been a March installment of 2019's A-Program-A-Month
