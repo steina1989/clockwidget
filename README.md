@@ -6,7 +6,7 @@ Binds a hotkey to a huge digital clock widget that's rendered (hopefully) on top
 Python3
 
 PyGObject, GTK and their dependencies
-[Here's how!](https://pygobject.readthedocs.io/en/latest/etting_started.html#windows-getting-started)
+[Here's how!](https://pygobject.readthedocs.io/en/latest/getting_started.html#windows-getting-started)
 
 You will also need [Pynput](https://pypi.org/project/pynput/)
 ```
@@ -24,7 +24,7 @@ You should now be obtrusively greeted by the clock widget.
 
 
 ## Modifying the hotkey
-The hotket is relatively simple to modify to your liking, check out the self.key_combinations list in ClockListener (main.py) and the pynput documentation.
+The hotkey is relatively simple to modify to your liking, check out the self.key_combinations list in ClockListener (main.py) and the pynput documentation.
 
 ## Installing (WIP)
 ### OS with systemd (Debian, Arch, etc.)
