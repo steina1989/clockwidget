@@ -28,14 +28,9 @@ The hotkey is relatively simple to modify to your liking, check out the self.key
 
 ## Installing (WIP)
 ### OS with systemd (Debian, Arch, etc.)
-Open clockwidget.service to fill in missing details, and save changes.
-
-Shown here is the path to systemd service directories on Ubuntu 18.10. They may reside elsewhere on other distros.
 ```
-sudo cp clockwidget.service /lib/systemd/system/clockwidget.service
-sudo systemctl daemon-reload
-sudo systemctl enable clockwidget.service
-sudo systemctl start clockwidget.service
+chmod +x install.sh
+./install.sh
 ```
 If something is wrong, try debugging with
 ```
@@ -46,5 +41,9 @@ sudo journalctl -f -u clockwidget.service
 ## Known caveats
 ### Gnome
 You may want to enable the [noAnnoyance plugin](https://extensions.gnome.org/extension/1236/noannoyance/) if the Clock widget opens in the background and you are greeted with Gnome's "Application Ready" message (it's a mad annoying feature anyway)
+
+There seems to be some disrepancies between operating systems, especially regarding how successfully the application of css is (clock is rendered with small font size)
+
+It has however been verified to work on Ubuntu 18.10 with Vanilla Gnome installed.
 
 ## This has been a March installment of 2019's A-Program-A-Month

@@ -29,7 +29,7 @@ class ClockListener:
 
     def check_for_combination(self):
         for combination in self.key_combinations:
-            if len(self.pressed & combination) == len(combination):
+            if combination == self.pressed:
                 return True
         return False
 

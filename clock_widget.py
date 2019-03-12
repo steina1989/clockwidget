@@ -19,7 +19,7 @@ class Clock(Gtk.Window):
 
         self.time_label = Gtk.Label(label=self.time_string())
         self.add(self.time_label)
-
+    
         GLib.timeout_add(1000, self.update_time)
 
         self.connect("destroy", Gtk.main_quit)
