@@ -7,8 +7,8 @@ class ClockListener:
     def __init__(self):
 
         self.key_combinations = [
-            {keyboard.Key.ctrl, keyboard.Key.shift, keyboard.KeyCode(char="a")},
-            {keyboard.Key.ctrl, keyboard.Key.shift, keyboard.KeyCode(char="A")},
+            {keyboard.Key.alt, keyboard.KeyCode(char="t")},
+            {keyboard.Key.alt, keyboard.KeyCode(char="T")},
         ]
 
         self.pressed = set()

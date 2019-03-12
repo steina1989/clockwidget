@@ -17,7 +17,7 @@ pip3 install pynput
 ```
 python3 main.py
 ```
-Now press Ctrl+Shift+a, which is the default hotkey.
+Now press Ctrl+alt+t, which is the default hotkey.
 You should now be obtrusively greeted by the clock widget.
 
 ![](https://github.com/steina1989/clockwidget/blob/master/demo.png)
